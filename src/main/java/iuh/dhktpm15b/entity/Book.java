@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name ="book")
 public class Book {
@@ -28,21 +29,19 @@ public class Book {
 	public Book() {
 		
 	}
-
-	public Book(int bookId, String title, String author, float price) {
+	
+	public Book(int bookId) {
 		this.bookId = bookId;
+	}
+
+	public Book(String title, String author, float price) {
+		
 		this.title = title;
 		this.author = author;
 		this.price = price;
 	}
 
-	public int getBookId() {
-		return bookId;
-	}
-
-	public void setBookId(int bookId) {
-		this.bookId = bookId;
-	}
+	
 
 	public String getTitle() {
 		return title;
@@ -67,6 +66,12 @@ public class Book {
 	public void setPrice(float price) {
 		this.price = price;
 	}
+
+	@Override
+	public String toString() {
+		return "Book [bookId=" + bookId + ", title=" + title + ", author=" + author + ", price=" + price + "]";
+	}
+	
 	
 	
 	

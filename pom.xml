@@ -7,7 +7,7 @@
  <dependencies>
 
 	
-	<dependency>
+	 	<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>5.5.7.Final</version>
@@ -19,6 +19,7 @@
 			<artifactId>mssql-jdbc</artifactId>
 			<version>9.4.0.jre8</version>
 		</dependency>
+		
 
   </dependencies>
 </project>
